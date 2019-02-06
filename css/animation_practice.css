@@ -1,0 +1,129 @@
+/* this is where all of your CSS styles go */
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+.grid_container {
+	width: 200px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+.mono {
+	font-family: helvetica;
+	font-size: 2em;
+	float: left;
+	margin-left: 5px;
+}
+
+@keyframes n_move {
+	0% {left:0px;}
+	100% {left:-175px;}
+}
+
+.n {position:relative;
+	animation: n_move 2s linear;
+	animation-fill-mode: forwards;
+animation-delay: 3s;}
+
+@keyframes o2_move { 
+	0% {top:0px; left:0px;}
+	25%{top:25px; left:0px;}
+	75% {top:25px; left:-114px;}
+	100% {top:0px; left:-114px;} }
+
+.o2 {position:relative;
+	animation: o2_move 2s linear;
+	animation-fill-mode: forwards;
+animation-delay: 3s;}
+
+@keyframes o_move {
+	0% {top:0px; left: 0px;}
+	25% {top:-25px; left:0px;}
+	75% {top:-25px; left: 57px;}
+	100% {top: 0px; left:57px;}
+}
+
+.o { position:relative;
+	animation:o_move 2s linear;
+	animation-fill-mode: forwards;
+	animation-delay: 3s; }
+
+@keyframes r_moves {
+	0% {left:0px;}
+	100% {left: 82px;}
+}
+
+.r {position:relative;
+	animation: r_moves 2s linear;
+	animation-fill-mode: forwards;
+animation-delay: 3s;}
+
+@keyframes e_moves {
+	0% {top:0px; left: 0px;}
+	25% {top:-25px; left:0px;}
+	75% {top:-25px; left: 80px;}
+	100% {top: 0px; left:80px;}
+}
+
+.e {position:relative;
+	animation: e_moves 2s linear;
+	animation-fill-mode: forwards;
+animation-delay: 3s;}
+
+
+@keyframes s_appear {
+	0%{ opacity:0; }
+	100% {opacity:1;}
+}
+
+.s {opacity:0;
+	left:-8px;
+	position:relative;
+	animation: s_appear 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 5s;}
+
+@keyframes skrek {
+	0% {opacity:0;}
+	100%{opacity:1;}
+}
+
+@keyframes allowed { 
+0% {opacity:0;}
+100% {opacity:1;} }
+
+.allowed {
+	opacity:0;
+	position:relative;
+	top:-60px;
+	animation: allowed 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 5s}
+
+.shrek {
+	opacity:0;
+	position:relative;
+	top:120px;
+	left:-120px;
+	width:400px;
+	height:200px;
+	background: url(../image/shrek.jpg) no-repeat center;
+	background-size:cover;
+	animation: skrek 2s;
+	animation-fill-mode: forwards;
+	animation-delay:8s;
+}
+
+
+
+
+
+
+
+
